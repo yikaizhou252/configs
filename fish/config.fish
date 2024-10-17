@@ -1,7 +1,8 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+
+pyenv init - | source
 
 function fish_greeting
 	fortune	
 end
+
+set -Ux ANDROID_SDK_ROOT $HOME/Library/Android/sdk

@@ -1,23 +1,65 @@
 {
-  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.5",
   "schemes" : [
     {
-      "pointer" : {
-        "disableAcceleration" : true
-      },
       "if" : {
         "device" : {
           "productName" : "USB Receiver",
-          "productID" : "0xc547",
+          "vendorID" : "0x46d",
           "category" : "mouse",
-          "vendorID" : "0x46d"
+          "productID" : "0xc547"
         }
       },
       "scrolling" : {
         "reverse" : {
           "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "pointer" : {
+        "speed" : 0,
+        "acceleration" : 1.1,
+        "disableAcceleration" : true
+      }
+    },
+    {
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1,
+        "speed" : 0.352
+      },
+      "if" : {
+        "device" : {
+          "productName" : "PRO X Wireless",
+          "productID" : "0xc094",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "serialNumber" : "E254E33C"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 2
+      },
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "vendorID" : "0x5ac",
+          "productID" : "0x342",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
         }
       }
     }
-  ]
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
 }
